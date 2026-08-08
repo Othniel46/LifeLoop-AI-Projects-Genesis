@@ -1,31 +1,54 @@
-import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
+
+import Home from "./pages/Home";
+import Dashboard from "./pages/Dashboard";
+import AI from "./pages/AI";
+import Projects from "./pages/Projects";
+import Research from "./pages/Research";
+import About from "./pages/About";
+
+import "./App.css";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
+
       <Navbar />
 
-        <div className="app">
+      <Routes>
 
-          <header className="hero">
+        <Route path="/" element={<Home />} />
 
-          <h1>🚀 LifeLoop-AI Project Genesis</h1>
+        <Route
+          path="/dashboard"
+          element={<Dashboard />}
+        />
 
-          <p className="subtitle">Your Personal AI Operating System</p>
-      
-          <p className="description">
-            Welcome to the next generation AI that combines productivity, automation, research, career development,
-            and future space technologies.</p>
+        <Route
+          path="/ai"
+          element={<AI />}
+        />
 
-          <button>
-            Begin Your Journey
-          </button>
+        <Route
+          path="/projects"
+          element={<Projects />}
+        />
 
-        </header>
+        <Route
+          path="/research"
+          element={<Research />}
+        />
 
-    </div>
-  </>
+        <Route
+          path="/about"
+          element={<About />}
+        />
+
+      </Routes>
+
+    </BrowserRouter>
   );
 }
 

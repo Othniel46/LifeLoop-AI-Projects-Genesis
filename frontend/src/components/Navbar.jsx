@@ -1,24 +1,46 @@
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
   return (
     <nav className="navbar">
-      <div className="logo">
+
+      <NavLink to="/" className="logo">
         🚀 LifeLoop-AI
-      </div>
+      </NavLink>
 
       <ul className="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">AI</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Research</a></li>
-        <li><a href="#">About</a></li>
+
+        <li>
+          <NavLink to="/">Home</NavLink>
+        </li>
+
+        <li>
+          <NavLink to="/dashboard">Dashboard</NavLink>
+        </li>
+
+        <li>
+          <NavLink to="/ai">AI</NavLink>
+        </li>
+
+        <li>
+          <NavLink to="/projects">Projects</NavLink>
+        </li>
+
+        <li>
+          <NavLink to="/research">Research</NavLink>
+        </li>
+
+        <li>
+          <NavLink to="/about">About</NavLink>
+        </li>
+
       </ul>
 
       <button className="login-btn">
         Login
       </button>
+
     </nav>
   );
 }
