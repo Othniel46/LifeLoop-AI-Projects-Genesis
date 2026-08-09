@@ -11,6 +11,8 @@ import About from "./pages/About";
 
 import "./App.css";
 
+import Footer from "./components/Footer";
+
 function App() {
   return (
     <BrowserRouter>
@@ -18,35 +20,15 @@ function App() {
       <Navbar />
 
       <Routes>
-
         <Route path="/" element={<Home />} />
-
-        <Route
-          path="/dashboard"
-          element={<Dashboard />}
-        />
-
-        <Route
-          path="/ai"
-          element={<AI />}
-        />
-
-        <Route
-          path="/projects"
-          element={<Projects />}
-        />
-
-        <Route
-          path="/research"
-          element={<Research />}
-        />
-
-        <Route
-          path="/about"
-          element={<About />}
-        />
-
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/ai" element={<AI />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/research" element={<Research />} />
+        <Route path="/about" element={<About />} />
       </Routes>
+
+      <Footer />
 
     </BrowserRouter>
   );
