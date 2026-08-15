@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" role="img" aria-labelledby="title desc">
+  <title id="title">LifeLoop-AI</title>
+  <desc id="desc">
+    LifeLoop-AI Project Genesis logo
+  </desc>
+
+  <!-- Infinity / Life Loop symbol -->
+  <g fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round">
+    <path d="M125 80
+         C125 35 185 35 220 80
+         C255 125 315 125 315 80
+         C315 35 255 35 220 80
+         C185 125 125 125 125 80Z"></path>
+  </g>
+
+  <!-- AI core -->
+  <circle cx="220" cy="80" r="14" fill="currentColor"></circle>
+
+  <!-- Wordmark -->
+  <text x="350" y="92" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" fill="currentColor">
+    LifeLoop
+  </text>
+
+  <text x="350" y="128" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="600" fill="currentColor">
+    -AI
+  </text>
+</svg>
